@@ -48,64 +48,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
 
 
-       // wt=getValue(et1);
-
-/*
-         str1 = et1.getText().toString();
-
-
-        if(et1 == null || TextUtils.isEmpty(str1)|| et1.getText().toString()=="") {
-
-            wt = 0.0;
-
-        } else {
-
-            wt = Double.parseDouble(str1);
-
-        }
-         str2 = et2.getText().toString();
-
-
-        if(et2 == null || TextUtils.isEmpty(str2)) {
-
-            ht = 0.0;
-
-        } else {
-
-            ht = Double.parseDouble(str2);
-
-        }
-*/
 
     }
 
 
 
-/*
-    public void radiobajuga(View view) {
-        if (rb1.isChecked()) {
-            wt = wt * 0.45;
-        } else if (rb2.isChecked()) {
-            wt = wt * 1;
-        }
 
-        return;
-    }
-
-
-    public void radionibajuga(View view) {
-        if (rb3.isChecked()) {
-            ht = ht * 0.01;
-        } else if (rb4.isChecked()) {
-            ht = ht * 2.54 * 0.01;
-        }
-        return;
-    }
-
-
-
-
-*/
 
 
 
@@ -162,15 +110,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         bmi=wt/(ht*ht);
         Intent go = new Intent(MainActivity.this, boom.class);
 
-       // et2.setText(str1);
-       // et1.setText(str2);
+
         Bundle data = new Bundle();
         data.putDouble("val", bmi);
-       // yourIntent.putExtras(b);
-     //   String s=Double.toString(ht);
-       // String s1=Double.toString(wt);
-       // et2.setText(s);
-       // et1.setText(s1);
+
         go.putExtras(data);
 
 
